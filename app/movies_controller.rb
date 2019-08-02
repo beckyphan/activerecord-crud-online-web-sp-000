@@ -43,11 +43,11 @@ def can_get_the_last_item_in_the_database
 end
 
 def can_get_size_of_the_database
-  movie.size
+  movie = Movie.size
 end
 
 def can_find_the_first_item_from_the_database_using_id
-  movie.find_by(id: 1)
+  movie = Movie.find_by(id: 1)
 end
 
 def can_find_by_multiple_attributes
@@ -55,13 +55,13 @@ def can_find_by_multiple_attributes
   # title == "Title"
   # release_date == 2000
   # director == "Me"
-  movie.find_by(attributes)
+  movies = Movie.find_by(attributes)
 end
 
 def can_find_using_where_clause_and_be_sorted
   # For this test return all movies released after 2002 and ordered by 
   # release date descending
-  movies = .find_by()
+  movies = Movie.find_by()
 end
 
 def can_be_found_updated_and_saved
